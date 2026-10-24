@@ -68,6 +68,6 @@ def test_combo():
     x_expected = np.array([1.,4.,8.,10.,8.,4.,1.]) 
     x_expected /= np.sum(x_expected)
 
-    assert np.allclose(kernel_combo.kernel(x_dummy)[4:11], x_expected)
+    assert np.allclose(kernel_combo.kernel(x_dummy)[4], x_expected)
 
     print(kernel_combo.kernel(x_dummy))
